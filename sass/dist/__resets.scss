@@ -1,0 +1,62 @@
+@import "./_variables";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+img{
+    width: 100%;
+}
+
+// !======================================================================
+              button{
+                  border: none;
+                  outline: transparent;
+                  cursor: pointer;
+                  font-family: $poppins;
+                  transition: .3s;
+              }
+              button:active {
+                  transform: scale(0.96);
+                  transition: .2s;
+              }
+              button:hover{
+                  outline: 3.5px dotted $VeryDarkCyan;
+                  outline-offset: 0.25rem;
+                  transition: .2s; 
+              }
+              button:focus:not(:focus-visible) {
+                  outline: transparent;
+              }
+// !========================================================================
+
+
+h1,
+h2,
+h3{
+    font-family: $poppins;
+    color: $VeryDarkCyan;
+}
+
+p{
+    font-family: $openSans;
+}

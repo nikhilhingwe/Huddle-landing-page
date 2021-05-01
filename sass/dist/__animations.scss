@@ -1,0 +1,53 @@
+.social-media li:hover{
+    cursor: pointer;
+    animation: bounce ease 1s;
+    animation-iteration-count: 1; 
+}
+.card-img:hover{
+    cursor: pointer;
+    animation: bounce ease 1s;
+    animation-iteration-count: 1; 
+}
+@keyframes bounce {
+    0%{
+        transform: translateY(0rem);
+    }
+    30%{
+        transform: translateY(-.4rem);
+    }
+  
+    50%{
+        transform: translateY(-.0rem);  
+    }
+    70%{
+        transform: translateY(-.4rem);
+    }
+    100%{
+        transform: translateY(-.0rem);
+    }
+    
+}
+
+.huddle__navbar,
+.huddle__main{
+    animation: fadeIn 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeIn {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+
+
+
+
+
+
+
+
+

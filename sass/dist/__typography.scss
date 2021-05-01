@@ -1,0 +1,116 @@
+@import "./_mixins";
+@import "./_variables";
+
+
+
+// <!--====================================================== HEADINGS ====================================================================-->
+.headings{
+    padding-top: 12.5px;
+    padding-right: 40px;
+    @include breakpoint(768px){
+        padding-right: 0px;
+    }
+    h1{
+        font-size: 2.5rem;
+        max-width: 30rem;
+        word-spacing: -2px;
+        padding-bottom: 27.5px;
+        @include breakpoint(1240px){
+            font-size: 2.3rem;
+        }
+        @include breakpoint(1000px){
+            font-size: 1.9rem;
+            max-width: 25rem;
+        }
+        @include breakpoint(900px){
+            font-size: 1.68rem;
+            max-width: 22rem;
+            padding-bottom: 20px;
+        }
+        @include breakpoint(768px){
+            margin: auto;
+        }
+        @include breakpoint(420px){
+            font-size: 1.3rem;
+            max-width: 17rem;
+        }
+    }
+    p{
+        font-size: 1.125rem;
+        color: $VeryDarkCyan;
+        max-width: 32.5rem;
+        line-height: 1.5;
+        @include breakpoint(1240px){
+            font-size: 1rem;
+        }
+        @include breakpoint(1000px){
+            font-size: 0.9rem;
+            max-width: 30rem;
+        }
+        @include breakpoint(900px){
+            font-size: 0.78rem;
+            max-width: 28rem;
+        }
+        @include breakpoint(768px){
+            font-size: 0.8rem;
+            max-width: 20rem;
+            margin: auto;
+        }
+    }
+}
+// <!--======================================================== CARDS ======================================================================-->
+.features__section{
+    .card-text{
+        @include breakpoint(768px){
+            padding: 30px 20px;
+        }   
+      h2{
+          font-size: 1.75rem;
+          padding-bottom: 12px;
+          @include breakpoint(1200px){
+            font-size: 1.6rem;
+          }
+          @include breakpoint(900px){
+            font-size: 1.5rem;
+        }
+        @include breakpoint(420px){
+            font-size: 1.2rem;
+        }
+     }
+      p{
+          max-width: 30rem;
+          font-size: 1.1rem;
+          line-height: 1.55;
+          word-spacing: 1.5px;
+          @include breakpoint(1200px){
+            font-size: 1rem;
+            max-width: 28rem;
+        }
+        @include breakpoint(900px){
+            font-size: 0.79rem;
+            line-height: 1.6;
+            max-width: 22rem;
+         }
+       }
+    } 
+}
+// <!--=============================================== READY-TO-BUILD-YOUR-COMMUNITY =========================================================-->
+.community-card{
+    h3{
+        padding-top: 12px;
+        padding-bottom: 35px;
+        font-size: 1.98rem;
+        @include breakpoint(862px){
+            font-size: 1.4rem;
+        }
+        @include breakpoint(600px){
+            font-size: 1rem;
+            padding-bottom: 20px;
+        }
+        @include breakpoint(390px){
+            font-size: 0.8rem;
+            padding-bottom: 20px;
+        }
+    }
+}
+// <!--========================================================================================================================================-->

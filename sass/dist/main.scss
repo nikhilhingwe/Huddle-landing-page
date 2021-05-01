@@ -1,0 +1,416 @@
+@import "./_resets";
+@import "./_variables";
+@import "./_globals";
+@import "./_mixins";
+@import "./_typography";
+@import "./_animations";
+
+// <!--=================================================== HUDDLE-HEADER =================================================================-->
+.huddle{
+    background-image: url(/images/bg-hero-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -20px;
+    background-color: $VeryPaleCyan;
+    padding-top: 50px;
+    padding-bottom: 60px;
+    @include breakpoint(768px){
+        padding-top: 30px;
+        background-image: url(/images/bg-hero-mobile.svg);
+    }
+}
+.huddle__navbar{
+    @include flex(row,center,space-between);
+    .logo{
+        width: 15.65%;
+        @include breakpoint(1000px){
+            width: 20%;
+        }
+        @include breakpoint(768px){
+            width: 25%;
+        }
+        @include breakpoint(600px){
+            width: 32%;
+        }
+    }
+}
+
+.nav__btn{
+    padding: 14px 65.5px;
+    border-radius: 50px;
+    background: $btnBackground;
+    font-size: 14px;
+    box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.13);
+    position: relative;
+    bottom: 2px;
+    @include breakpoint(768px){
+        padding: 12px 40px;
+        font-size: 12px;
+    }
+    @include breakpoint(600px){
+        font-size: 10px;
+        padding: 10px 30px;
+    }
+    @include breakpoint(500px){
+        padding: 8px 28px;
+    }
+    a{
+        color: $VeryDarkCyan;
+    }
+}
+
+// <!--====================================================== HEADINGS ====================================================================-->
+
+.huddle__headlines{
+    padding-top: 61px;
+    @include flex(row,center,space-between);
+    @include breakpoint(768px){
+        @include flex(column,center,none);
+        text-align: center;
+    }
+    .getStarted__btn{
+        background: $Pink;
+        margin-top: 33px;
+        padding: 18px 71.2px;
+        border-radius: 50px;
+        box-shadow: 1px 1px 6px pink;
+        @include breakpoint(1000px){
+            padding: 15px 50px;
+        }
+        @include breakpoint(1000px){
+            margin: 30px 0px;
+        }
+        @include breakpoint(420px){
+            font-size: 0.7rem;
+            padding: 12px 40px;
+        }
+        a{
+            color: $VeryPaleCyan;
+            font-size: 13.5px;
+            word-spacing: 1px;
+        }
+    } 
+}
+.headings__img{
+    width: 54.4%;
+    padding-right: 3px;
+    @include breakpoint(768px){
+        width: 70%;
+        padding-right: 0px;
+    }
+    @include breakpoint(500px){
+        width: 85%;
+        padding-right: 0px;
+    }
+}
+
+// <!--======================================================== CARDS ======================================================================--> 
+
+.features__section{
+    padding-top: 160px;
+    @include breakpoint(768px){
+        padding-top: 100px;
+    }
+}
+
+
+//! Card-1 [ GROW Together ] ============================================================>>>>>>>
+
+.card{
+    margin-bottom: 35px;
+    padding: 55.5px 0px;
+    padding-left: 123px;
+    box-shadow: 0px 0px 10px  rgba(211, 211, 211, 0.534);
+    border-radius: 17px;
+    @include flex(row,center,space-between);
+
+
+    @include breakpoint(1200px){
+        padding-left: 50px;
+    }
+    @include breakpoint(768px){
+        @include flex(column-reverse,center,none);
+        text-align: center;
+        padding: 30px 0px;
+    }
+    .card-img{
+        width: 39.5%;
+        padding-right: 35px;
+        @include breakpoint(768px){
+            width: 70%;
+            padding-right: 0px;
+        }
+    }
+}
+
+
+//! Card-2 [ FLOWING CONVERSATION ] ============================================================>>>>>>>
+
+.card-2{
+    flex-direction: row-reverse;
+    padding: 75px 0px;
+    padding-left: 123px;
+    @include breakpoint(1200px){
+        padding-left: 50px;
+    }
+    @include breakpoint(768px){
+        @include flex(column-reverse,center,none);
+        padding-left: 0px;
+        padding: 30px 0px;
+    }
+    .card-img-2{
+        width: 40.5%;
+        @include breakpoint(768px){
+            width: 70%;
+            padding-right: 0px;
+        }
+    }
+    .text-2{
+        padding-right: 20px;
+        p{
+            max-width: 32rem;
+            @include breakpoint(1200px){
+                max-width: 28rem;
+            }
+            @include breakpoint(900px){
+                max-width: 22rem;
+            }
+        }
+    }
+}
+
+//! Card-3 [ YOUR USER ] ==================================================================>>>>>>>
+
+.card-3{
+    padding: 62px 0px;
+    padding-left: 123px;
+    @include breakpoint(1200px){
+        padding-left: 50px;
+    }
+    @include breakpoint(768px){
+        @include flex(column-reverse,center,none);
+        text-align: center;
+        padding-left: 0px;
+        padding: 30px 0px;
+    }
+    .card-img-3{
+        width: 40.2%;
+        padding-right: 28px;
+        @include breakpoint(768px){
+            width: 70%;
+            padding-right: 0px;
+        }
+    }
+    .text-3{
+        p{
+            max-width: 30.3rem;
+            @include breakpoint(1200px){
+                max-width: 28rem;
+            }
+            @include breakpoint(900px){
+                max-width: 22rem;
+            }
+            @include breakpoint(768px){
+                margin: auto;
+            }
+        }
+
+    }
+}
+
+// <!--=============================================== READY-TO-BUILD-YOUR-COMMUNITY =========================================================--> 
+
+.community__card-sec{
+    @include flex(row,center,center);
+    padding-top: 25px;
+    @include breakpoint(768px){
+        padding-top: 0px;
+    }
+    .community-card{
+        @include flex(column,center,center);
+        position: relative;
+        top: 98px;        
+        background: $btnBackground;
+        box-shadow: 0px 0px 10px  rgba(211, 211, 211, 0.534);
+        border-radius: 16px;
+        padding: 53px 133px;
+        @include breakpoint(862px){
+            padding: 50px 80px;
+        }
+        @include breakpoint(600px){
+            padding: 40px 30px;
+        }
+        @include breakpoint(768px){
+            top: 60px;
+        }
+        @include breakpoint(390px){
+            padding: 35px 20px;
+        }
+        .started__btn-2{
+            background: $Pink;
+            color: $VeryPaleCyan;
+            font-size: 1.2rem;
+            padding: 26px 105px;
+            border-radius: 50px;
+            box-shadow: 0px 7px 8px rgba(34, 32, 33, 0.233);
+            @include breakpoint(862px){
+                padding: 18px 70px;
+                font-size: 0.9rem;
+            }
+            @include breakpoint(600px){
+                padding: 14px 50px;
+                font-size: 0.7rem;
+            }
+            @include breakpoint(390px){
+                padding: 12px 35px;
+                font-size: 0.68rem;
+            }
+        }
+    }
+}
+
+// <!--========================================================== FOOTER ====================================================================-->
+
+footer{
+    background: $VeryDarkCyan;
+    padding-top: 195px;
+}
+
+.footer__nav{
+    display: flex;
+    padding-bottom: 30px;
+    .logo-2{
+        img{
+            filter: brightness(0) invert(1);
+        }
+    }
+}
+
+.footer__grid{
+    font-family: $openSans;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    @include breakpoint(1000px){
+        grid-template-columns: auto ;
+    }
+}
+
+.info-section{
+    .foot-flex{
+        @include flex(row,center,none);
+        padding-bottom: 28px;
+        color: $VeryPaleCyan;
+        @include breakpoint(600px){
+            font-size: 0.9rem;
+            max-width: 20rem;
+        }
+    }
+    .address{
+        align-items: flex-start;
+        .add-logo{
+            padding-top: 11px;
+            padding-right: 6px;
+        }
+        .add{
+            p{
+                padding-top: 4px;
+                max-width: 22rem;
+                line-height: 1.5;
+            }
+        }
+    }
+    .mr{
+        margin-right: 20px;
+    }
+}
+
+.about-us,.contact-us{
+    padding-top: 6px;
+    li{
+        padding-bottom: 18px;
+    }
+    a{
+        color: $VeryPaleCyan;
+        font-size: 1.12rem;
+        @include breakpoint(600px){
+            font-size: 0.9rem;
+        }
+        &:hover{
+            color: $Pink;
+        }
+    }
+}
+
+.about-us{
+    @include breakpoint(1000px){
+        padding-top: 26px;
+    }
+}
+
+.social-media{
+    @include breakpoint(1000px){
+        padding-top: 30px;
+        padding-bottom: 10px;
+        @include flex(row,center,center)
+    }
+    ul{
+        @include flex(row,center,none);
+        padding-top: 6px;
+        padding-left: 20px;
+    }
+    li{
+        margin: 0px 6px;
+    }
+    ion-icon{
+        color: $VeryPaleCyan;
+        font-size: 16px;
+        padding: 6px;
+        border: 1px solid $VeryPaleCyan;
+        border-radius: 50px;
+    }
+}
+
+// <!--====================================================================================================================================-->
+.copyRight{
+   padding: 10px 0px;
+   font-size: 12px;
+   font-family: $openSans; 
+   color: $VeryPaleCyan;
+   display: flex;
+   justify-content: flex-end;
+   @include breakpoint(1000px){
+    padding-bottom: 30px;
+    @include flex(row,center,center)
+   }
+}
+// <!--====================================================================================================================================-->
+.name{
+    padding: 8px 0px;
+    p{
+        font-family: $poppins;
+        font-size: 13px;
+        color: $VeryPaleCyan;
+        @include breakpoint(1000px){
+            font-size: 10px;
+        }
+    }
+    .attribution{
+        a{
+            color: $Pink;
+        }
+        
+    }
+}
+// <!--====================================================================================================================================-->
+
+
+
+
+
+
+
+
+
+
+
+
