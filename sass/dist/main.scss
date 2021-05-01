@@ -39,6 +39,7 @@
     padding: 14px 65.5px;
     border-radius: 50px;
     background: $btnBackground;
+    color: $VeryDarkCyan;
     font-size: 14px;
     box-shadow: 1px 2px 8px rgba(0, 0, 0, 0.13);
     position: relative;
@@ -53,9 +54,6 @@
     }
     @include breakpoint(500px){
         padding: 8px 28px;
-    }
-    a{
-        color: $VeryDarkCyan;
     }
 }
 
@@ -74,6 +72,9 @@
         padding: 18px 71.2px;
         border-radius: 50px;
         box-shadow: 1px 1px 6px pink;
+         color: $VeryPaleCyan;
+            font-size: 13.5px;
+            word-spacing: 1px;
         @include breakpoint(1000px){
             padding: 15px 50px;
         }
@@ -83,11 +84,6 @@
         @include breakpoint(420px){
             font-size: 0.7rem;
             padding: 12px 40px;
-        }
-        a{
-            color: $VeryPaleCyan;
-            font-size: 13.5px;
-            word-spacing: 1px;
         }
     } 
 }
